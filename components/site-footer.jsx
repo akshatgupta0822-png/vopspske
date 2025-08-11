@@ -25,7 +25,7 @@ export default function SiteFooter() {
               {[
                 {
                   icon: Facebook,
-                  href: "https://facebook.com/voiceforpeace",
+                  href: "https://facebook.com/",
                   label: "Facebook",
                   color: "hover:bg-blue-50 hover:text-blue-600",
                 },
@@ -43,7 +43,7 @@ export default function SiteFooter() {
                 },
                 {
                   icon: Youtube,
-                  href: "https://youtube.com/voiceforpeace",
+                  href: "https://youtube.com/",
                   label: "YouTube",
                   color: "hover:bg-red-50 hover:text-red-600",
                 },
