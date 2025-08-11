@@ -209,22 +209,9 @@ const AccessibilityToolbar = () => {
                   </Button>
                 </div>
 
-                {/* Screen Reader Support */}
+              
                 <div>
-                  <Button
-                    size="sm"
-                    variant={screenReader ? "default" : "outline"}
-                    onClick={() => {
-                      toggleScreenReader()
-                      speakText(screenReader ? "Screen reader support disabled" : "Screen reader support enabled")
-                    }}
-                    className="w-full justify-start transition-all duration-200 hover:bg-emerald-50 focus-visible:ring-2 focus-visible:ring-emerald-500"
-                    aria-label={screenReader ? "Disable screen reader support" : "Enable screen reader support"}
-                    aria-pressed={screenReader}
-                  >
-                    <Eye className="w-4 h-4 mr-2" aria-hidden="true" />
-                    Screen Reader
-                  </Button>
+                  
                 </div>
 
                 {/* Sound Toggle */}
