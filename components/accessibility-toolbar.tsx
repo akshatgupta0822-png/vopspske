@@ -17,7 +17,7 @@ const AccessibilityToolbar = () => {
   const [reducedMotion, setReducedMotion] = React.useState(false)
 
   const adjustFontSize = (change: number) => {
-    const newSize = Math.max(12, Math.min(28, fontSize + change))
+    const newSize = Math.max(10, Math.min(24, fontSize + change))
     setFontSize(newSize)
     document.documentElement.style.fontSize = `${newSize}px`
   }
@@ -269,26 +269,6 @@ const AccessibilityToolbar = () => {
                     <MousePointer className="w-4 h-4 mr-2" aria-hidden="true" />
                     Large Pointer
                   </Button>
-                </div>
-
-                {/* Reduced Motion */}
-                <div>
-                  <Button
-                    size="sm"
-                    variant={reducedMotion ? "default" : "outline"}
-                    onClick={() => {
-                      toggleReducedMotion()
-                      speakText(reducedMotion ? "Reduced motion disabled" : "Reduced motion enabled")
-                      announceToScreenReader(reducedMotion ? "Reduced motion disabled" : "Reduced motion enabled")
-                    }}
-                    className="w-full justify-start transition-all duration-200 hover:bg-emerald-50 focus-visible:ring-2 focus-visible:ring-emerald-500"
-                    aria-label={reducedMotion ? "Disable reduced motion" : "Enable reduced motion"}
-                    aria-pressed={reducedMotion}
-                  >
-                    <Type className="w-4 h-4 mr-2" aria-hidden="true" />
-                    Reduce Motion
-                  </Button>
-                </div>
 
                 <div className="text-xs text-muted-foreground bg-emerald-50 p-3 rounded-lg">
                   <p className="font-medium mb-1">Navigation Tips:</p>
