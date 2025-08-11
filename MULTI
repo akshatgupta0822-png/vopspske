@@ -1,0 +1,166 @@
+// app/(site)/initiatives/page.tsx
+import SectionReveal from "@/components/section-reveal"
+
+export default function InitiativesPage() {
+  return (
+    <SectionReveal delay={0}>
+      <div className="py-14 md:py-20">
+        <SectionReveal delay={120}>
+          {/* Content here */}
+        </SectionReveal>
+      </div>
+    </SectionReveal>
+  )
+}
+
+// app/(site)/events/page.tsx
+import SectionReveal from "@/components/section-reveal"
+
+export default function EventsPage() {
+  return (
+    <SectionReveal delay={0}>
+      <div className="py-14 md:py-20">
+        <SectionReveal delay={120}>
+          {/* Content here */}
+        </SectionReveal>
+      </div>
+    </SectionReveal>
+  )
+}
+
+// app/(site)/contact/page.tsx
+import SectionReveal from "@/components/section-reveal"
+
+export default function ContactPage() {
+  return (
+    <SectionReveal delay={0}>
+      <div className="py-14 md:py-20">
+        <SectionReveal delay={120}>
+          {/* Content here */}
+        </SectionReveal>
+      </div>
+    </SectionReveal>
+  )
+}
+
+// app/(site)/faq/page.tsx
+import SectionReveal from "@/components/section-reveal"
+
+export default function FaqPage() {
+  return (
+    <SectionReveal delay={0}>
+      <div className="py-14 md:py-20">
+        <SectionReveal delay={120}>
+          {/* Content here */}
+        </SectionReveal>
+      </div>
+    </SectionReveal>
+  )
+}
+
+// app/(site)/chat/page.tsx
+import SectionReveal from "@/components/section-reveal"
+
+export default function ChatPage() {
+  return (
+    <SectionReveal delay={100}>
+      <div className="py-14 md:py-20">
+        {/* Content here */}
+      </div>
+    </SectionReveal>
+  )
+}
+
+// app/(site)/stories/page.tsx
+import SectionReveal from "@/components/section-reveal"
+
+export default function StoriesPage() {
+  return (
+    <SectionReveal delay={0}>
+      <div className="py-14 md:py-20">
+        <SectionReveal delay={120}>
+          {/* Content here */}
+        </SectionReveal>
+      </div>
+    </SectionReveal>
+  )
+}
+
+// app/(site)/about/page.tsx
+import SectionReveal from "@/components/section-reveal"
+
+export default function AboutPage() {
+  return (
+    <SectionReveal delay={0}>
+      <div className="py-14 md:py-20">
+        <SectionReveal delay={120}>
+          {/* Content here */}
+        </SectionReveal>
+        <SectionReveal delay={240}>
+          {/* Content here */}
+        </SectionReveal>
+        <SectionReveal delay={360}>
+          {/* Content here */}
+        </SectionReveal>
+      </div>
+    </SectionReveal>
+  )
+}
+
+// app/(site)/reviews/page.tsx
+import SectionReveal from "@/components/section-reveal"
+
+export default function ReviewsPage() {
+  return (
+    <SectionReveal>
+      <div className="py-14 md:py-20">
+        <SectionReveal delay={0}>
+          {/* Content here */}
+        </SectionReveal>
+        <SectionReveal delay={120}>
+          {/* Content here */}
+        </SectionReveal>
+        <SectionReveal delay={240}>
+          {/* Content here */}
+        </SectionReveal>
+      </div>
+    </SectionReveal>
+  )
+}
+
+// app/globals.css
+/* Existing animations here */
+
+.hover-lift {
+  transition: transform .3s cubic-bezier(.22,.61,.36,1), box-shadow .3s ease;
+  will-change: transform, box-shadow;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(16,185,129,0.15);
+}
+
+.heading-accent {
+  position: relative;
+}
+.heading-accent::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 96px;
+  height: 4px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #10b981, #14b8a6);
+  opacity: 0.6;
+}
+.btn-press:active {
+  transform: translateY(1px) scale(0.99);
+}
+.soft-underline {
+  background-image: linear-gradient(120deg, rgba(16,185,129,0.25) 0%, rgba(20,184,166,0.25) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  background-position: 0 85%;
+}
