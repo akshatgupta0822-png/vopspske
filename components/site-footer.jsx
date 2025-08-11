@@ -70,7 +70,7 @@ export default function SiteFooter() {
             <div className="text-xs text-muted-foreground space-y-1">
               <p className="font-medium text-gray-700">In collaboration with:</p>
               <p className="font-medium text-emerald-700">Sagar Public School, Katara Extension</p>
-              <p>Akshat &amp; Avani</p>
+              <p>Akshat &amp; Akshay</p>
               <p className="mt-3">
                 <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 font-medium text-xs">
                   Vision Web Challenge 2025
