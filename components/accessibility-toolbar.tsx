@@ -269,6 +269,9 @@ const AccessibilityToolbar = () => {
                     <MousePointer className="w-4 h-4 mr-2" aria-hidden="true" />
                     Large Pointer
                   </Button>
+                </div>
+
+
 
                 <div className="text-xs text-muted-foreground bg-emerald-50 p-3 rounded-lg">
                   <p className="font-medium mb-1">Navigation Tips:</p>
